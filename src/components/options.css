@@ -1,5 +1,5 @@
 .options-container{
-    background-color: azure;
+    background-color: white;
     display: flex;
     flex-direction: column;
     height: fit-content;
@@ -13,4 +13,18 @@
     flex-direction: column;
     justify-content: space-around;
     /* margin-top: 10px; */
+}
+
+.options-hiragana h2{
+    margin-bottom: 8px;
+    font-weight: 400;
+    text-decoration: underline;
+}
+
+.options-hiragana label{
+    margin-bottom: 4px;
+}
+
+.options-hiragana input{
+    accent-color: skyblue;
 }

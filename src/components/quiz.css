@@ -1,8 +1,44 @@
 .quiz-container{
-    background-color: beige;
+    background-color: #fdfdfd;
+    height: fit-content;
     width: 40%;
+    padding-bottom: 45vh;
+    border: 1px solid red;
+    transform: translateX(-20px);
 }
 
 .quiz-question{
-    width: 80%;
+    margin-top: 1rem;
+    margin-left: 25%;
+    margin-right: 25%;
+    padding: 2rem;
+    text-align: center;
+    border: 2px solid black;
+}
+
+.quiz-buttons{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 1.5rem;
+}
+
+.quiz-buttons button{
+    background-image: linear-gradient(to bottom, lightgray 0%, gray  100%);
+    cursor: pointer;
+    color: white;
+    padding: 1rem 2rem;
+    background-size: 100% 200%;
+    text-transform: uppercase;
+    border: none;
+    border-radius: 10px;
+    transition: 0.5s ease-out;
+    box-shadow: 0 0 20px #eee;
+}
+
+.quiz-buttons button:hover{
+    background-size: 100% 100%;
+}
+
+.quiz-buttons button:active{
+    transform: scale(0.9);
 }

@@ -1,7 +1,8 @@
 .main{
-    background-color: aliceblue;
+    background-color: #F8FAFC;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     height: 100%;
+    padding-top: 18px;
 }
