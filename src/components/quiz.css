@@ -16,6 +16,26 @@
     border: 2px solid black;
 }
 
+.quiz-input{
+    margin-top: 1rem;
+    margin-left: 40%;
+    width: 20%;
+}
+
+.quiz-input input{
+    width: 100%;
+    padding: 0.7rem;
+    text-align: center;
+    font-size: 1.2em;
+}
+
+.quiz-question-result{
+    margin-top: 1em;
+    text-align: center;
+    font-size: 1.2em;
+    font-weight: bolder;
+}
+
 .quiz-buttons{
     display: flex;
     justify-content: space-evenly;
