@@ -31,7 +31,11 @@ function Quiz({selectedOptions}){
     }
 
     const handleCheck = () => {
-        if (userInput.toLowerCase() === currentKana.romaji.toLowerCase()){
+        if (userInput.trim() === ""){
+            setResultMessage("Please write the romaji!!!")
+        }
+
+        else if (userInput.toLowerCase() === currentKana.romaji.toLowerCase()){
             setResultMessage("Correct")
         }
         else{
@@ -51,6 +55,11 @@ function Quiz({selectedOptions}){
                     name="user-input" 
                     value={userInput}
                     onChange={(e) => setUserInput(e.target.value)}
+                    onKeyDown={(e) => {
+                        if (e.key === "Enter"){
+                            handleCheck();
+                        }
+                    }}
                     autoFocus
                 />
             </div>
@@ -61,11 +70,12 @@ function Quiz({selectedOptions}){
             </div>
 
             <div 
-                    className="quiz-question-result" 
-                    style={{color: resultMessage === "Correct" ? "darkgreen" : "darkred"}}
-                >
-                    <p>{resultMessage}</p>
-                </div>
+                className="quiz-question-result" 
+                style={{color: resultMessage === "Correct" ? "darkgreen" : "darkred"}}
+            >
+                <p>{resultMessage}</p>
+            </div>
+
         </div>
     )
 }
